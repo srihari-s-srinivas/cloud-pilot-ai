@@ -1,0 +1,18 @@
+npm warn Unknown env config "python". This will stop working in the next major version of npm.
+❌ MongoDB Connection Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.m2frygv.mongodb.net
+⚠️ Falling back to a local in-memory MongoDB instance because Atlas connection failed.
+🚀 Server running on http://localhost:3000
+Environment: development
+✅ MongoDB Connected: 127.0.0.1
+✅ MongoDB connected via in-memory fallback.
+[2m9:28:33 am[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m9:28:33 am[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m9:28:33 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mserver-log.txt[22m
+[2m9:28:33 am[22m [36m[1m[vite][22m[39m server restarted.
+[2m9:28:48 am[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m9:28:48 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mserver-log.txt[22m
+[2m9:28:48 am[22m [36m[1m[vite][22m[39m server restarted.
+[2m9:52:32 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mbackend/utils/crypto.ts[22m
+[2m9:52:33 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mserver-log.txt[22m
+[2m9:53:06 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mbackend/utils/crypto.ts[22m
+[2m9:53:08 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mserver-log.txt[22m
