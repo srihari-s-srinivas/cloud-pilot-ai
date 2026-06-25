@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght=400;500;600;700&family=JetBrains+Mono:wght=400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-slate-950: #020617;
+  --bg-slate-900: #0f172a;
+  --bg-slate-800: #1e293b;
+  --text-slate-200: #e2e8f0;
+  --text-slate-300: #cbd5e1;
+  --text-slate-400: #94a3b8;
+  --text-slate-500: #64748b;
+  --text-white: #ffffff;
+  --text-slate-950: #020617;
+}
+
+/* Light Mode Variables */
+.light {
+  --bg-slate-950: #f8fafc;
+  --bg-slate-900: #ffffff;
+  --bg-slate-800: #e2e8f0;
+  --text-slate-200: #020617;
+  --text-slate-300: #1e293b;
+  --text-slate-400: #475569;
+  --text-slate-500: #64748b;
+  --text-white: #020617;
+  --text-slate-950: #020617; /* Keep the dark buttons/text readable on bright themes */
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-slate-950: var(--bg-slate-950);
+  --color-slate-900: var(--bg-slate-900);
+  --color-slate-800: var(--bg-slate-800);
+  --color-slate-500: var(--text-slate-500);
+  --color-slate-400: var(--text-slate-400);
+  --color-slate-300: var(--text-slate-300);
+  --color-slate-200: var(--text-slate-200);
+  --color-white: var(--text-white);
+  --color-slate-950-custom: var(--text-slate-950);
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-200 antialiased transition-colors duration-200;
+  }
+}
+
+/* Specific light mode stylesheet overrides for high fidelity contrast ratio and fine-tuning */
+.light {
+  /* Override text white class to maintain solid contrast */
+  .text-white {
+    color: #020617 !important;
+  }
+  
+  /* Buttons text should remain dark slate when using text-slate-950 */
+  .text-slate-950 {
+    color: #020617 !important;
+  }
+  
+  /* Maintain transparent cards styling in Sidebar */
+  .bg-slate-900\/50 {
+    background-color: rgba(255, 255, 255, 0.45) !important;
+  }
+
+  /* Map and specific topology overlay fixes */
+  .bg-slate-950\/40 {
+    background-color: rgba(248, 250, 252, 0.45) !important;
+  }
+  .bg-slate-950\/80 {
+    background-color: rgba(248, 250, 252, 0.8) !important;
+  }
+  
+  /* Navigation Hover feedback on Light background */
+  .hover\:bg-slate-800:hover {
+    background-color: #f1f5f9 !important;
+    color: #020617 !important;
+  }
+
+  /* Sidebar Profile text footer background */
+  .border-slate-800 {
+    border-color: #cbd5e1 !important;
+  }
+  
+  /* Recharts visualization components */
+  .recharts-cartesian-grid-horizontal line,
+  .recharts-cartesian-grid-vertical line {
+    stroke: #cbd5e1 !important;
+  }
+  
+  .recharts-text {
+    fill: #475569 !important;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full border-2 border-slate-950;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-700;
+}
